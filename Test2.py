@@ -6,7 +6,7 @@ import math
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
-model = load_model("Model/keras_model.h5")
+model = load_model("Model/sign_language_model.h5")
 labels = open("Model/labels.txt", "r").read().splitlines()
 
 offset = 20
